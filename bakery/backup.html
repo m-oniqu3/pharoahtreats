@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+   
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+
+    <style>
+    .hero-image {
+    background-image: url("brownie.jpg");
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: white;
+    
+  }
+
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .container {
+  position: relative;
+  width: 23%;
+  
+
+  }
+  
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image {
+  border-radius: 70%;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: burlywood;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  border-radius: 70%;
+}
+
+.container:hover .overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.jumbotron {
+  background-image: url("bread1.jpg");
+  height: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+  </style>
+
+</head>
+<body>
+
+    
+<!--<nav class="navbar navbar-expand-sm bg-light navbar-light">
+ 
+    <a class="navbar-brand" href="#">
+      <img src="bakerylogo1.png" alt="logo" style="width:200px;">
+    </a>
+    
+   
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 3</a>
+      </li>
+    </ul>
+</nav> -->
+
+ <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+   
+    <a class="navbar-brand" href="#">
+      <img src="bakerylogo.png" alt="logo" style="width:280px;">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+       
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Products
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Strains</a>
+            <a class="dropdown-item" href="#">Gallery</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Order</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Rewards</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">FAQs</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Account</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Cart</a>
+        </li>
+
+
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1 class="display-4">Lets Get Baked</h1>
+      <h4>Enjoy our cannabis-infused pastries</h4> <br>
+      <button type="button" class="btn btn-light btn-lg">Order Now </button>
+      
+    </div>
+  </div> 
+    
+  <br> <br>
+  
+  <div class="container-fluid"> 
+     
+    <div class="container">
+      <img src="brown.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="text">Brownies</div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <img src="cake.jpeg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="text">Cakes & Cupcakes</div>
+      </div>
+    </div>
+    
+   <!--  <div class="container">
+      <img src="gummy.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="text">Gummy Bears</div>
+      </div> 
+    </div> -->
+    <div class="container">
+      <img src="pudding.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="text">Puddings</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <img src="cookie.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="text">Cookies</div>
+      </div>
+    </div>
+    </div>
+
+    <br> <br>
+  <div class="jumbotron" >
+    <h1 class="display-4">Guaranteed Quality!</h1> <br>
+    <p class="lead text-justify" style="width: 400px;" > <strong> Pharoah’s Treats </strong> sells products geared towards gastrointestinal uptake such as gummies, cookies, brownies, puddings, cakes, and cupcakes that are manufactured with the different strains with the standardized potency requirements.Our pastries are are produced with cannabis that is locally and organically grown.</p> <br>
+    <!--<hr class="my-4">
+    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>-->
+    <p class="lead">
+      <a class="btn btn-success btn-lg" href="#" role="button">Learn more</a>
+    </p>
+  </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+</body>
+</html>
